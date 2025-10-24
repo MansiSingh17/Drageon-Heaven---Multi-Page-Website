@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Haven - Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo-link">
+            <img src="images/dragon-logo.png"
+                alt="Majestic red dragon with outstretched wings breathing fire against a golden sunset"
+                class="logo-image">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item dropdown">
+                    <button class="nav-button" aria-expanded="false" aria-haspopup="true">Menu</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-button" aria-expanded="false" aria-haspopup="true">External Links</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://en.wikipedia.org/wiki/Dragon" target="_blank" rel="noopener">Dragon
+                                Wikipedia</a></li>
+                        <li><a href="https://www.worldhistory.org/Dragons_in_Ancient_China/" target="_blank"
+                                rel="noopener">Dragons in Chinese History</a></li>
+                        <li><a href="https://mythology.net/mythical-creatures/dragon/" target="_blank"
+                                rel="noopener">Dragon Mythology</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content register-content">
+        <h1>Dragon Haven - Register</h1>
+
+        <div class="form-container">
+            <p class="form-intro">Join the Dragon Haven community to receive updates about dragon sightings, events, and
+                exclusive content.</p>
+
+            <form action="/register" method="POST" class="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required-mark">(required)</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required-mark">(required)</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dragon-type">Favorite Dragon Type</label>
+                    <select id="dragon-type" name="dragon-type">
+                        <option value="">Select a dragon type</option>
+                        <option value="fire">Fire Dragon</option>
+                        <option value="ice">Ice Dragon</option>
+                        <option value="storm">Storm Dragon</option>
+                        <option value="earth">Earth Dragon</option>
+                        <option value="water">Water Dragon</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group checkbox-group">
+                    <legend>Newsletter Preferences</legend>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="newsletter-weekly" name="newsletter" value="weekly">
+                        <label for="newsletter-weekly">Receive weekly dragon lore updates</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="newsletter-events" name="newsletter" value="events">
+                        <label for="newsletter-events">Get notified about dragon-themed events</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="newsletter-sightings" name="newsletter" value="sightings">
+                        <label for="newsletter-sightings">Alert me to dragon sighting reports</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Dragon Haven. All rights reserved.</p>
+        <nav class="footer-nav">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
