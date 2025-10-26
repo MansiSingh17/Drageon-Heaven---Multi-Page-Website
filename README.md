@@ -109,4 +109,4 @@ I built this project following web development best practices:
 
 ---
 
-This project represents my understanding of foundational web development concepts and my ability to create accessible, responsive websites.RetryClaude can make mistakes. Please double-check responses. Sonnet 4.5
+This project represents my understanding of foundational web development concepts and my ability to create accessible, responsive websites.
